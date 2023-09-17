@@ -73,13 +73,14 @@ body {
 .main-content {
   display: flex; /* make the main content a flex container */
   justify-content: space-between; /* space between the two main sections */
+  min-height: 150vh; 
 }
 
-.section, .product-grid {
+.avatar-section, .product-grid {
   box-sizing: border-box; /* include padding in total width */
 }
 
-.section {
+.avatar-section {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -87,6 +88,8 @@ body {
   padding: 20px;
   background-color: #fff;
   position: relative;
+  /* Add a minimum height for the sticky effect */
+  min-height: 100vh; 
 }
 
 .slideshow-container, .dots-container, p.fw-bolder {
@@ -244,7 +247,7 @@ body {
       align-items: center;
   }
 
-  .section, .product-grid {
+  .avatar-section, .product-grid {
       width: 90%;
   }
 
