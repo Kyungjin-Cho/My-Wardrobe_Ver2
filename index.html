@@ -1,379 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>My Wardrobe - Home</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">My Wardrobe</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Wardrobe</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">Second-Hand</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit" style="margin-right: 10px;">
-                            Sign in
-                        </button>
-                        <button class="btn btn-outline-dark" type="submit">
-                            Sign up
-                        </button>
-                    </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wardrobe - Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">My Wardrobe</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Wardrobe</a></li>
+          <li class="dropdown">
+            <a href="#">Shop &#9662;</a>
+            <div class="dropdown-content">
+              <a href="#">Category 1</a>
+              <a href="#">Category 2</a>
+              <a href="#">Category 3</a>
+            </div>
+          </li>
+        </ul>
+        <div class="user-actions">
+          <a href="#">Sign In</a>
+          <a href="#">Sign Up</a>
+        </div>
+    </div>
+      
+    <div class="header">
+    My Wardrobe in My Hand
+    </div>      
+    
+    <div class="main-content">
+        <div class="section">
+            <!-- Left Section for the avatar area -->
+            <div class="slideshow-container">
+                <!-- Images -->
+                <div class="mySlides fade">
+                    <img src="assets/avatar/00891_00.jpg" alt="Avatar 1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/avatar/03615_00.jpg" alt="Avatar 2">
+                </div>
+
+                <!-- Add more images for the slideshow -->
+                <div class="mySlides fade">
+                    <img src="assets/avatar/07445_00.jpg" alt="Avatar 3">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/avatar/07573_00.jpg" alt="Avatar 4">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/avatar/08909_00.jpg" alt="Avatar 5">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/avatar/10549_00.jpg" alt="Avatar 6">
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- Dots -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <p class="fw-bolder" style="text-align: center;">Items in my wardrobe</p>
+            <div class="currentItem"></div>
+        </div>
+
+        <!-- Right section for the product cards -->
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/01260_00.jpg" alt="01260_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Fancy Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Fancy Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">My Wardrboe in My Hand</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Blahblah</p>
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/08348_00.jpg" alt="08348_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Popular Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Popular Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
+                    </div>
                 </div>
             </div>
-        </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-1 px-lg-0 mt-5">
-                <div class="row">
-                    <!-- Left Section for the avatar area -->
-                    <div class="col-lg-4">
-                        <div class="card h-50">
-                            <div class="card-body">
-                                <!-- Slideshow container -->
-                                <div class="slideshow-container">
-                                    <!-- Images -->
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/00891_00.jpg" alt="Avatar 1">
-                                    </div>
-
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/03615_00.jpg" alt="Avatar 2">
-                                    </div>
-
-                                    <!-- Add more images for the slideshow -->
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/07445_00.jpg" alt="Avatar 3">
-                                    </div>
-
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/07573_00.jpg" alt="Avatar 4">
-                                    </div>
-
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/08909_00.jpg" alt="Avatar 5">
-                                    </div>
-
-                                    <div class="mySlides fade">
-                                        <img src="assets/avatar/10549_00.jpg" alt="Avatar 6">
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                </div>
-                                <!-- Dots -->
-                                <div style="text-align:center">
-                                    <span class="dot" onclick="currentSlide(1)"></span>
-                                    <span class="dot" onclick="currentSlide(2)"></span>
-                                    <span class="dot" onclick="currentSlide(3)"></span>
-                                    <span class="dot" onclick="currentSlide(4)"></span>
-                                    <span class="dot" onclick="currentSlide(5)"></span>
-                                    <span class="dot" onclick="currentSlide(6)"></span>
-                                </div>
-                                <p class="fw-bolder" style="text-align: center;">Items in my wardrobe</p>
-                            </div>
-                        </div>
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/09933_00.jpg" alt="09933_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Popular Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Popular Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
                     </div>
-                    <!-- Right section for the product cards -->
-                    <div class="col-lg-8">
-                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/01260_00.jpg" alt="01260_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Fancy Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Fancy Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/01430_00.jpg" alt="01430_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Special Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Special Brand</h5>
-                                            <!-- Product price-->
-                                            €18.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/02783_00.jpg" alt="02783_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Sale Brand</h5>
-                                            <!-- Product price-->
-                                            €25.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/03751_00.jpg" alt="03751_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/06429_00.jpg" alt="06429_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Sale Brand</h5>
-                                            <!-- Product price-->
-                                            €25.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/06802_00.jpg" alt="06802_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Fancy Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Fancy Brand</h5>
-                                            <!-- Product price-->
-                                            €120.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/07429_00.jpg" alt="07429_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Special Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Special Brand</h5>
-                                            <!-- Product price-->
-                                            €18.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/08348_00.jpg" alt="08348_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/09933_00.jpg" alt="09933_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/11028_00.jpg" alt="11028_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/11351_00.jpg" alt="11351_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="assets/cloth/11791_00.jpg" alt="11791_00.jpg" />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product Company-->
-                                            <h6 class="fw-bolder">Popular Brand</h5>
-                                            <!-- Product price-->
-                                            €40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Try on</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
                     </div>
-                </div>    
+                </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; My Wardrobe 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/slide.js"></script>
-    </body>
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/11028_00.jpg" alt="11028_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Popular Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Popular Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/11351_00.jpg" alt="11351_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Popular Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Popular Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="assets/cloth/11791_00.jpg" alt="11791_00.jpg" />
+                    <!-- Product details-->
+                    <div class="card-body">
+                        <!-- Product name-->
+                        <h2 class="item-name">Popular Item</h5>
+                        <!-- Product Company-->
+                        <h3 class="brand-name">Popular Brand</h5>
+                        <!-- Product price-->
+                        <h4 class="price">€40.00</h4>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer">
+                        <div class="try-on"><a class="btn" href="#">Try on</a></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/slide.js"></script>
+</body>
 </html>
