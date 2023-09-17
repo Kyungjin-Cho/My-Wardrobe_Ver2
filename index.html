@@ -61,8 +61,47 @@
                     <div class="col-lg-4">
                         <div class="card h-50">
                             <div class="card-body">
-                                <h5 class="fw-bolder text-center">My Avatar</h5>
-                                <img src="https://dummyimage.com/300x450/dee2e6/6c757d.jpg" alt="Avatar" class="img-fluid mx-auto d-block" />
+                                <!-- Slideshow container -->
+                                <div class="slideshow-container">
+                                    <!-- Images -->
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/00891_00.jpg" alt="Avatar 1">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/03615_00.jpg" alt="Avatar 2">
+                                    </div>
+
+                                    <!-- Add more images for the slideshow -->
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/07445_00.jpg" alt="Avatar 3">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/07573_00.jpg" alt="Avatar 4">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/08909_00.jpg" alt="Avatar 5">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <img src="assets/avatar/10549_00.jpg" alt="Avatar 6">
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                                <!-- Dots -->
+                                <div style="text-align:center">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                    <span class="dot" onclick="currentSlide(6)"></span>
+                                </div>
                                 <p class="fw-bolder" style="text-align: center;">Items in my wardrobe</p>
                             </div>
                         </div>
@@ -335,5 +374,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/slide.js"></script>
     </body>
 </html>
